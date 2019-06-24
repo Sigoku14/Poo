@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Mamelon';
+    src: url("../font/Mamelon.otf");
+}
+
+body{
+    margin-bottom: 100px;
+}
+/*キャンバス*/
+
+#canvas {
+    max-width: 350px;
+    max-height: 350px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#MyCanvas {
+    max-width: 350px;
+    max-height: 350px;
+    position: relative;
+    box-shadow: 0px 0px 5px skyblue;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Mamelon';
+    position: relative;
+}
+#show_color {
+    width: 80%;
+    height: 80px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 1em;
+}
+
+.color_form {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.red, .red input {
+    color: red;
+}
+
+.blue, .blue input {
+    color: blue;
+}
+
+.green, .green input {
+    color: green;
+}
+
+input {
+    font-size: 10pt;
+    border: none;
+    text-align: right;
+}
+
+.up {
+    border: 1px solid black;
+    border-radius: 1em;
+    padding: 3px 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}

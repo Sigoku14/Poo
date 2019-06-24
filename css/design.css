@@ -1,0 +1,177 @@
+@charset "UTF-8";
+/*プぷプフォント*/
+
+/*ひらがな、カタカナのみ使用可能*/
+
+@font-face {
+    font-family: 'pupufu';
+    src: url("../font/pupupu.otf");
+}
+
+/*マメロンフォント*/
+
+/*ひらがな、カタカナ、漢字使用可能*/
+
+@font-face {
+    font-family: 'Mamelon';
+    src: url("../font/Mamelon.otf");
+}
+
+body {
+    width: 100%;
+    margin: auto;
+}
+
+.title {
+    color: #000000;
+    background: linear-gradient(45deg, #cd853f, #d2691e, #a0522d);
+    /*背景色*/
+    height: 50px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+    /*影*/
+    text-align: center;
+    text-shadow: 0px 0px 5px mistyrose;
+    padding: 5px 0px;
+    background-size: 600% 600%;
+    animation: AnimationName 5s ease infinite;
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+#home_title {
+    text-align: center;
+    font-family: 'Mamelon';
+}
+
+#member_change, #login_title, #infomation_title, #logout_title, #unsubscribe_title, #reg_title, #pic_title, #regist_title, #alb_title, #mypage_title {
+    text-align: center;
+    font-family: 'Mamelon';
+}
+
+#member_change {
+    text-align: center;
+    font-family: 'MNamelon';
+    margin: 30px 0px;
+}
+
+#registr_title {
+    text-align: center;
+    font-family: 'Mamelon';
+}
+
+table {
+    margin-left: auto;
+    /* 左側マージンを自動的に空ける */
+    margin-right: auto;
+}
+
+th {
+    text-align: left;
+}
+
+#box1 td {
+    padding: 3%;
+}
+
+#box2 td {
+    margin-right: 8%;
+    text-align: center;
+}
+
+input {
+    height: 50px;
+}
+
+input::placeholder {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+select {
+    width: 15%;
+    height: 30px;
+    border: 1px black solid;
+}
+
+#logout_cont, #unsub_cont {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+    border: 1px inset midnightblue;
+    border-radius: 1em;
+    box-shadow: 0px 0px 8px dodgerblue;
+    padding: 30px 20px;
+    position: relative;
+}
+
+#logout_cont a, #unsub_cont a {
+    position: relative;
+    bottom: 0px;
+    text-decoration: none;
+    color: darkred;
+}
+
+.square_btn {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #668ad8;
+    /*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4% #627295;
+    border-radius: 3%;
+}
+
+.square_btn:hover {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+
+
+.square_btn:active {
+    /*ボタンを押したとき*/
+    -ms-transform: translateY(4%);
+    -webkit-transform: translateY(4%);
+    transform: translateY(4%);
+    /*下に動く*/
+    border-bottom: none;
+    /*線を消す*/
+}
+
+
+#main {
+    text-align: left;
+    width: 80%;
+    border: 1px dotted aqua;
+    margin: auto;
+    padding: 10px 20px;
+}
+
+#main a {
+    text-decoration: none;
+    color: midnightblue;
+}
+
+#main a:hover {
+    color: orchid;
+}
+
+/*プレビュー*/
+
+.preview {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+.prev {
+    width: 98%;
+}
+
+a{
+  text-decoration: none;
+}

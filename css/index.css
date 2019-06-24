@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/*プぷプフォント*/
+/*ひらがな、カタカナのみ使用可能*/
+@font-face {
+    font-family: 'pupufu';
+    src: url("../font/pupupu.otf");
+}
+/*マメロンフォント*/
+/*ひらがな、カタカナ、漢字使用可能*/
+@font-face {
+    font-family: 'Mamelon';
+    src: url("../font/Mamelon.otf");
+}
+
+@font-face {
+    font-family: 'Kikaicho';
+    src: url("../font/Kikaicho.otf");
+}
+
+@font-face {
+    font-family: 'shirokuma';
+    src: url("../font/Shirokuma.otf");
+}
+
+@font-face {
+    font-family: 'Digital';
+    src: url("../font/Digital.ttf");
+}
+
+body {
+    background-color: white;
+    margin-bottom: 80px;
+}
+
+#home_title {
+    padding-top: 1.5%;
+}
+
+.unko_cnt {
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    border-left: solid 6px #cd853f;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
+}
+
+#cnt_title {
+    text-align: left;
+    padding: 1%;
+    margin-left: 1%;
+    font-family: 'Kikaicho';
+}
+
+#counter {
+    text-align: center;
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    margin-top: 15px;
+    padding: 20px 0px;
+    border: 2px solid chocolate;
+    box-shadow: 0px 0px 5px darkorange;
+}
+
+#counter h3 {
+    font-size: 80pt;
+    line-height: 100px;
+    font-family: 'Digital';
+}
+
+.notice_title {
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    border-left: solid 6px #cd853f;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
+}
+
+#notice {
+    text-align: left;
+    padding: 1%;
+    margin-left: 1%;
+    font-family: 'Kikaicho';
+}
+
+.notice_t {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+.notice_t tr {
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+.notice_t td {
+    padding: 5px;
+    position: relative;
+}
+
+.mini_title {
+    font-family: 'Kikaicho';
+    width: 80%;
+    font-size: 11pt;
+}
+
+.date {
+    font-size: 8pt;
+    color: gray;
+    width: 20%;
+}
+
+#main a {
+    width: 20%;
+    text-align: center;
+}

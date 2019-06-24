@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/*プぷプフォント*/
+
+/*ひらがな、カタカナのみ使用可能*/
+
+@font-face {
+    font-family: 'pupufu';
+    src: url("../font/pupupu.otf");
+}
+
+/*マメロンフォント*/
+
+/*ひらがな、カタカナ、漢字使用可能*/
+
+@font-face {
+    font-family: 'Mamelon';
+    src: url("../font/Mamelon.otf");
+}
+
+body {
+    background-color: white;
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 10%;
+}
+
+hr {
+    height: 3px;
+    border-top: 5px #a9a9a9 solid;
+}
+
+#mypage_menu {
+    text-align: left;
+    padding: 5%;
+    margin-left: 1%;
+}
+
+.menu {
+    width: 90%;
+    padding: 3em 0.5em;
+    background: #f5f5f5;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
+}
+
+.menu {
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.nav a {
+    font-size: 1.0em;
+    margin: 5%;
+    padding: 7%;
+    color: black;
+}
+
+
+.nav {
+    text-align: center;
+    padding: 3%;
+}
+
+.square_btn {
+    width: 60%;
+    background: #d3d3d3;
+}
+
+a:active {
+  background-color:#afeeee;
+  } /*クリック中のリンクの色*/

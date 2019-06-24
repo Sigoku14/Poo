@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+#box1{
+  text-align: center;
+}
+
+#box1 th{
+  text-align: center;
+}
+
+#box1 td{
+  text-align: left;
+}
+
+#box1 button{
+  text-align: center;
+}
+
+#box1 button{
+  width:20%;
+}
+
+#box1 table{
+  margin-bottom: 5%;
+}
