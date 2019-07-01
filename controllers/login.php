@@ -16,15 +16,6 @@ if ($login->loginCheck()) {
     header("Location:logout.php");
     exit;
 }
-// if (!empty($_SESSION['login'])) {
-//     // あればlogoutへ
-//     header("Location:logout.php");
-//     exit;
-// } else {
-//     // なければ作成
-//     $login = new hew\Login;
-// }
-// test_var($_POST);
 if (!empty($_POST)) {
     if (!empty($_POST['mail'])) {
         // あった場合
@@ -44,18 +35,4 @@ if (!empty($_POST)) {
         exit;
     }
 }
-// $dbh = new PDO('mysql:dbname=' . DB . ';host=' . DB_HOST . ';charset=utf8', DB_USER, DB_PASS, array());
-// $stmt = $dbh->prepare('SELECT * FROM user WHERE user_mail = :mail AND user_pass = :pass AND status = 1 limit 0,1');
-// //プレースホルダに代入
-// $stmt->bindValue(':mail', 'tasuku1215mhg@gmail.com');
-// $stmt->bindValue(':pass', '１９９７１２１５');
-// //クエリー実行
-// $stmt->execute();
-// $array = $stmt->fetchAll();
-// echo '<pre>';
-// // var_dump($stmt->fetch(PDO::FETCH_ASSOC));
-// var_dump($stmt);
-// var_dump($array);
-// // var_dump('SELECT * FROM user WHERE user_mail = "tasuku1215mhg@gmail.com" AND user_pass = "１９９７１２１５"');
-// echo '</pre>';
 require_once '../views/login.php';
