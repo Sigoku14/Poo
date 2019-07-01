@@ -2,13 +2,13 @@
 require_once '../config.php';
 require_once '../models/function/function.php';
 require_once '../models/class/login.php';
-session_start();
+//session_start();
 // ログインされていなければログインページに飛ばす
 $login = loginCheck();
 if (!empty($_SESSION['pic_id'])) {
     $img_id = $_SESSION['pic_id'];
     $dbh = new \PDO('mysql:dbname=' . DB . ';host=' . DB_HOST . ';charset=utf8', DB_USER, DB_PASS, array());
-    $stmt = $dbh->prepare('SELECT * FROM picture WHERE user_id = ' . $login->getUserId().' AND pic_id = ' . $img_id);
+    $stmt = $dbh->prepare('SELECT * FROM picture WHERE user_id = ' . $login->getUserId() . ' AND pic_id = ' . $img_id);
     //クエリー実行
     $stmt->execute();
     $data = $stmt->fetchAll();

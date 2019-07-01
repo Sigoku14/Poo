@@ -2,7 +2,7 @@
 require_once '../config.php';
 require_once '../models/function/function.php';
 require_once '../models/class/login.php';
-session_start();
+//session_start();
 // ログインされていなければログインページに飛ばす
 $login = loginCheck();
 require_once '../views/Information_disclosure.php';
@@ -38,7 +38,7 @@ if (!empty($_POST)) {
     $pdf_content .= '<h1 class="center">体調情報</h1>';
     $pdf_content .= '<h2>1ヵ月の体調情報</h2>';
     foreach ($data as $key => $val) {
-        $pdf_content .= '<div class="data" style="background-color:rgb('.$data[$key]['red'].', '.$data[$key]['green'].', '.$data[$key]['blue'].')">';
+        $pdf_content .= '<div class="data" style="background-color:rgb(' . $data[$key]['red'] . ', ' . $data[$key]['green'] . ', ' . $data[$key]['blue'] . ')">';
         $pdf_content .= '<p class="white">' . $val['save_datetime'] . '</p>';
         $pdf_content .= '<p><img src="' . $val['file_path'] . '"></p>';
         $pdf_content .= '</div>';

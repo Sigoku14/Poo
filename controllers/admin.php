@@ -2,10 +2,10 @@
 require_once '../config.php';
 require_once '../models/function/function.php';
 require_once '../models/class/login.php';
-session_start();
+//session_start();
 if (!empty($_GET['state']) && $_GET['state'] == 'session_delete') {
     sessionDelete();
-    session_start();
+    //session_start();
 }
 test_var($_SESSION);
 ?>

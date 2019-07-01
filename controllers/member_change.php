@@ -3,7 +3,7 @@ require_once '../config.php';
 require_once '../models/function/function.php';
 require_once '../models/class/login.php';
 require_once '../models/class/memberChange.php';
-session_start();
+//session_start();
 // ログインされていなければログインページに飛ばす
 $login = loginCheck();
 $memberChange = new hew\MemberChange($login);

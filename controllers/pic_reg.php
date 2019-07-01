@@ -2,7 +2,7 @@
 require_once '../config.php';
 require_once '../models/function/function.php';
 require_once '../models/class/login.php';
-session_start();
+//session_start();
 // ログインされていなければログインページに飛ばす
 $login = loginCheck();
 $unko_image = '';
@@ -31,7 +31,7 @@ if (empty($login->getUserId()) && empty($_SESSION['img'])) {
     }
     // test_var($detail_id);
     // test_var($sum);
-// test_var($detail);
+    // test_var($detail);
 
     $stmt = $dbh->prepare('INSERT INTO picture(user_id,file_path,save_datetime,red,green,blue,detail_id)
     VALUES(:user_id,:file_path,:save_datetime,:red,:green,:blue,:detail)');

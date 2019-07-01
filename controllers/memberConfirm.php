@@ -8,7 +8,7 @@ if (!empty($_POST) && $_POST['send'] == 'back') {
     header("Location:memberRegistration.php");
     exit;
 }
-session_start();
+//session_start();
 // セッションの中に会員登録クラスがあるか？
 if (!empty($_SESSION['memberRegistration'])) {
     // あれば取得
@@ -26,7 +26,7 @@ if (!empty($_POST) && $_POST['send'] == 'register') {
     sessionDelete();
     exit;
 }
-// session_start();
+// //session_start();
 // sessionDelete();
 // // 会員登録クラス
 // $memberRegistration = new MemberRegistration;
@@ -54,7 +54,7 @@ if (!empty($_POST) && $_POST['send'] == 'register') {
 // // エラーチェック
 // if (!$memberRegistration->errCheck()) {
 //     // エラーがない場合
-//     session_start();
+//     //session_start();
 //     $_SESSION['memberRegistration']=$memberRegistration;
 //     // header( "Location:memberConfirm.php");
 //     // exit;

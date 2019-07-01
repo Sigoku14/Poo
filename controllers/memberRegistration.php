@@ -3,7 +3,7 @@ require_once '../config.php';
 require_once '../models/function/function.php';
 require_once '../models/class/memberRegistration.php';
 require_once '../models/class/login.php';
-session_start();
+//session_start();
 // セッションの中に会員登録クラスがあるか？
 if (!empty($_SESSION['memberRegistration'])) {
     // あれば取得
@@ -39,7 +39,7 @@ if (!empty($_POST)) {
     // エラーチェック
     if ($memberRegistration->errCheck()) {
         // エラーがない場合
-        session_start();
+        //session_start();
         $_SESSION['memberRegistration'] = $memberRegistration;
         header("Location:memberConfirm.php");
         exit;

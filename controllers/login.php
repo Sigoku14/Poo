@@ -2,7 +2,7 @@
 require_once '../config.php';
 require_once '../models/function/function.php';
 require_once '../models/class/login.php';
-session_start();
+// //session_start();
 // セッションの中にloginクラスがあるか？
 if (!empty($_SESSION['login'])) {
     // あれば
@@ -29,7 +29,7 @@ if (!empty($_POST)) {
     // エラーチェック
     if ($login->loginCheck()) {
         // エラーがない場合
-        session_start();
+        //session_start();
         $_SESSION['login'] = $login;
         header("Location:index.php");
         exit;
